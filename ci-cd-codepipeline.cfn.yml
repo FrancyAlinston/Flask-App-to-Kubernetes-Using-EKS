@@ -1,5 +1,5 @@
 ---
-AWSTemplateFormatVersion: 
+AWSTemplateFormatVersion: '2010-09-09'
 
 Description: EKSWSV1
 
@@ -172,10 +172,11 @@ Resources:
         - arn:aws:iam::aws:policy/service-role/AWSLambdaENIManagementAccess
       Path: /
       AssumeRolePolicyDocument:
-        Version: 2012-10-17
+        Version: '2012-10-17'
         Statement:
-          - Effect: Allow
-            Action: sts:AssumeRole
+          - 
+            Action: sts:AssumeRole  
+            Effect: Allow
             Principal:
               Service:
                 - lambda.amazonaws.com

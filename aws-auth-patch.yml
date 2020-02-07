@@ -8,7 +8,7 @@ data:
     - groups:
       - system:bootstrappers
       - system:nodes
-      rolearn: arn:aws:iam::939115191277:role/eksctl-simple-jwt-api-nodegroup-n-NodeInstanceRole-1OUI279WNXORM
+      rolearn: arn:aws:cloudformation:us-east-2:939115191277:stack/simple-jwt-api/0d4c9830-497b-11ea-ae1b-021e2396e2cc
       username: system:node:{{EC2PrivateDNSName}}
   mapUsers: |
     []
